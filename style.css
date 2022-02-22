@@ -4,9 +4,9 @@
 --color-grey-text: #5D5D5Dff;
 --color-light-gray:rgba(182, 179, 179, 0.452);
 --color-red: #CC1F0Bff;
---platinum: #E5E5E5ff;
+--border:rgb(238, 238, 238);
 --white: #FFFFFFff;
---line:#eee;
+
 }
 body{
   box-sizing: border-box;
@@ -55,7 +55,7 @@ a{
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    background-color: --color-light-gray;
+    background-color: var(--color-light-gray);
     color: white;
     border: none;
     border-radius: 1.5rem;
