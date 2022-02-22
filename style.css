@@ -32,9 +32,10 @@ a {
 .grid_container_header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--line);
 }
 .logo {
-  max-width: 60%;
+  max-width: 50%;
   justify-content: center;
 }
 .nav_buttons {
@@ -63,13 +64,14 @@ a {
 .btn_sign_up {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 40px;
   max-width: 100%;
   background-color: var(--color-light-gray);
   color: white;
   border: none;
   border-radius: 1.5rem;
   padding: 1.5px 20px;
-  text-align: start;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
@@ -139,6 +141,9 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
+.signle_recipe img{
+  margin-top: 6%;
+}
 .grid_container_recipe_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -146,14 +151,16 @@ h2 {
   grid-gap: 1%;
 }
 .btn_directions {
+  height: 40px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   max-width: 100%;
   background-color: var(--color-light-gray);
   color: white;
   border: none;
   border-radius: 1.5rem;
   padding: 1.5px 20px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
@@ -162,6 +169,10 @@ h2 {
 }
 
 .btn_save {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 100%;
   background-color: var(--color-red);
@@ -169,7 +180,6 @@ h2 {
   border: none;
   border-radius: 1.5rem;
   padding: 0.5px 20px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
@@ -178,6 +188,7 @@ h2 {
 .buttons {
   display: flex;
   flex-direction: row;
+
 }
 .card {
   position: relative;
