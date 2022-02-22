@@ -6,6 +6,21 @@
 --color-red: #CC1F0Bff;
 --platinum: #E5E5E5ff;
 --white: #FFFFFFff;
+--line:#eee;
+}
+body{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--color-grey-text);
 }
 
 a{
@@ -53,10 +68,6 @@ a{
     color:black;
 
 }
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  color:var(--color-grey-text);
-}
 .search {
   display: flex;
   flex-direction: row;
@@ -72,8 +83,63 @@ p {
   cursor: pointer;
 }
 hr {
-color: transparent;
+color:var(--line);
 }
+/*main*/
+
 strong{
     color: black;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.signle_recipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe_details{
+  display: flex;
+  flex-direction: row; 
+
+}
+.source{
+  display: flex;
+  flex-direction: column;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-color: var(--line)
+}
+.rating{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+h2{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.grid_container_recipe_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1%;
+}
+.card{
+  position: relative;
+  margin: 0 auto;
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(70, 70, 70, 0.596); 
+  color: #f1f1f1;
+  max-width: 100%;
+  padding: 10px;
+  padding-left: 5%;
+  margin: 0%;
 }
