@@ -1,30 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
-:root{
---color-black-text: #171717ff;
---color-grey-text: #5D5D5Dff;
---color-light-gray:rgba(182, 179, 179, 0.452);
---color-red: #CC1F0Bff;
---platinum: #E5E5E5ff;
---white: #FFFFFFff;
---line:#eee;
+:root {
+  --color-black-text: #171717ff;
+  --color-grey-text: #5d5d5dff;
+  --color-light-gray: rgba(182, 179, 179, 0.452);
+  --color-red: #cc1f0bff;
+  --platinum: #e5e5e5ff;
+  --white: #ffffffff;
+  --line: #eee;
 }
-body{
+body {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 100%;
 }
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
-  color:var(--color-grey-text);
+  color: var(--color-grey-text);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /*header*/
 .container_header {
@@ -39,7 +41,7 @@ a{
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--color-red);
   color: white;
   border: none;
@@ -51,28 +53,27 @@ a{
   margin: 4px 2px;
   cursor: pointer;
 }
-.btn_sign_up{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: --color-light-gray;
-    color: white;
-    border: none;
-    border-radius: 1.5rem;
-    padding: 1.5px 20px;
-    text-align: start;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    color:black;
-
+.btn_sign_up {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  background-color: var(--color-light-gray);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1.5px 20px;
+  text-align: start;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black;
 }
 .search {
   display: flex;
   flex-direction: row;
-  width: 70%;
-  background-color:var( --color-light-gray);
+  max-width: 70%;
+  background-color: var(--color-light-gray);
   border: none;
   border-radius: 0.5rem;
   padding: 0.5px 20px;
@@ -83,60 +84,89 @@ a{
   cursor: pointer;
 }
 hr {
-color:var(--line);
+  color: var(--line);
 }
 /*main*/
 
-strong{
-    color: black;
+strong {
+  color: black;
 }
 ul {
   list-style: none;
   padding: 0;
 }
-.signle_recipe{
+.signle_recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.recipe_details{
+.recipe_details {
   display: flex;
-  flex-direction: row; 
-
+  flex-direction: row;
 }
-.source{
+.source {
   display: flex;
   flex-direction: column;
   border-right-width: 1px;
   border-left-width: 1px;
-  border-color: var(--line)
+  border-color: var(--line);
 }
-.rating{
+.rating {
   max-width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
-h2{
+h2 {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.grid_container_recipe_list{
+.grid_container_recipe_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 1%;
 }
-.card{
+.btn_directions {
+  display: flex;
+  max-width: 100%;
+  background-color: var(--color-light-gray);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1.5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black;
+}
+
+.btn_save {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  background-color: var(--color-red);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.card {
   position: relative;
   margin: 0 auto;
 }
 
-.title{
+.title {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(70, 70, 70, 0.596); 
+  background: rgba(70, 70, 70, 0.596);
   color: #f1f1f1;
   max-width: 100%;
   padding: 10px;
