@@ -26,36 +26,39 @@
       </div>
       <img class="logo" src="/logo.svg" alt="logo" />
       <div class="nav_buttons">
-      <a href="#"> <button class="btn_log_in">Log in</button></a>
-      <a href="#"> <button class="btn_sign_up">Sign up</button></a>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="currentColor"
-        class="bi bi-arrow-down-circle"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
-        />
-      </svg>
-    </div>
+        <a href="#"> <button class="btn_log_in">Log in</button></a>
+        <a href="#"> <button class="btn_sign_up">Sign up</button></a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-arrow-down-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+          />
+        </svg>
+      </div>
     </header>
     <main>
       <section class="signle_recipe">
         <div>
-          <img
-            src="https://source.unsplash.com/random/600x800/?cabbage"
-            alt="cabbage"
-          />
-          <h1>Barbecue Beer-Can Cabbage</h1>
-          <div>VEGAN · 1 HR 15 MINS</div>
+          <div class="img_title">
+            <img
+              src="https://source.unsplash.com/random/600x800/?cabbage"
+              alt="cabbage"
+            />
+            <h1>Barbecue Beer-Can Cabbage</h1>
+            <div>VEGAN · 1 HR 15 MINS</div>
+          </div>
+
           <div class="recipe_details">
             <div class="rating">
               <div><strong> 66</strong> / 100</div>
-              <div>Rating</div>
+              <p>Rating</p>
             </div>
             <div class="source">
               <div>
@@ -78,9 +81,9 @@
             </div>
             <div class="total_ingredinets" ;>
               <strong> 6</strong>
+              <p>Ingredients</p>
             </div>
           </div>
-          <hr />
         </div>
 
         <ul class="ingredients">
@@ -101,9 +104,9 @@
       </section>
 
       <section>
-        <div>
+        <div class="see_all">
           <h2>From Epicurious</h2>
-          <div><a href="#">SEE ALL</a></div>
+          <a href="#">SEE ALL</a>
         </div>
         <div class="grid_container_recipe_list">
           <a href="#">
@@ -114,28 +117,49 @@
               />
               <p class="title">Beer-Can Cabbage Sandwiches</p>
             </div>
-            <div class="card_details">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-person-circle"
-                viewBox="0 0 16 16"
-              >
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path
-                  fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                />
-              </svg>
-              <p>
-                Epicurious
-              </p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg>
+            <div class="grid_container_card_details">
+              <div class="source_page">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                    />
+                  </svg>
+
+                  <h3>Epicurious</h3>
+                </div>
+                <strong> 68 </strong>
+              </div>
+              <div class="time">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <p>5yr ago</p>
+                </div>
+                <p>Rating</p>
+              </div>
             </div>
           </a>
 

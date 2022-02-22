@@ -94,10 +94,8 @@ a {
   margin: 4px 2px;
   cursor: pointer;
 }
-hr {
-  color: var(--line);
-}
-/*main*/
+
+/*main */
 
 strong {
   color: black;
@@ -105,15 +103,18 @@ strong {
 ul {
   list-style: none;
   padding: 0;
+  color: var(--color-grey-text);
 }
 .signle_recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .recipe_details {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--line);
 }
 .source {
   display: flex;
@@ -135,14 +136,19 @@ ul {
   align-items: center;
 }
 
-
 h2 {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.signle_recipe img{
+.signle_recipe img {
   margin-top: 6%;
+}
+.img_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
 }
 .grid_container_recipe_list {
   display: grid;
@@ -188,8 +194,18 @@ h2 {
 .buttons {
   display: flex;
   flex-direction: row;
-
 }
+.see_all,h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.see_all a{
+display: flex;
+align-items: center;
+padding-left: 2%;
+}
+
 .card {
   position: relative;
   margin: 0 auto;
@@ -205,4 +221,15 @@ h2 {
   padding: 10px;
   padding-left: 5%;
   margin: 0%;
+}
+
+.time,
+.source_page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.source_page div, .time div {
+  display: flex;
+  align-items: center;
 }
