@@ -24,7 +24,7 @@ a{
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--color-red);
   color: white;
   border: none;
@@ -39,7 +39,7 @@ a{
 .btn_sign_up{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     background-color: --color-light-gray;
     color: white;
     border: none;
@@ -60,7 +60,7 @@ p {
 .search {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  max-width: 100%;
   background-color:var( --color-light-gray);
   border: none;
   border-radius: 0.5rem;
