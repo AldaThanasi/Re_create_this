@@ -29,18 +29,25 @@ a {
   text-decoration: none;
 }
 /*header*/
-.container_header {
-  display: flex;
-  flex-direction: row;
+.grid_container_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .logo {
-  max-width: 15%;
+  max-width: 60%;
   justify-content: center;
 }
+.nav_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .btn_log_in {
+  height: 40px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
+  align-items: center;
   max-width: 100%;
   background-color: var(--color-red);
   color: white;
@@ -71,7 +78,9 @@ a {
 }
 .search {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 30px;
   max-width: 70%;
   background-color: var(--color-light-gray);
   border: none;
@@ -101,21 +110,30 @@ ul {
   align-items: center;
 }
 .recipe_details {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .source {
   display: flex;
   flex-direction: column;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-color: var(--line);
+  align-items: center;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
 }
 .rating {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+.total_ingredinets {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 h2 {
   display: flex;
   align-items: center;
@@ -157,7 +175,7 @@ h2 {
   margin: 4px 2px;
   cursor: pointer;
 }
-.single_recipe button {
+.buttons {
   display: flex;
   flex-direction: row;
 }
