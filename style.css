@@ -157,6 +157,10 @@ h2 {
   margin: 4px 2px;
   cursor: pointer;
 }
+.single_recipe button {
+  display: flex;
+  flex-direction: row;
+}
 .card {
   position: relative;
   margin: 0 auto;
